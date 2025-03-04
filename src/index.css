@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #221F26;
+  background-color: #ffffff;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+}
+
+.card-gradient {
+  @apply bg-gradient-to-br from-white/40 to-white/10 backdrop-blur-lg;
+}
+
+.glass-effect {
+  @apply bg-white/20 backdrop-blur-md;
+}
